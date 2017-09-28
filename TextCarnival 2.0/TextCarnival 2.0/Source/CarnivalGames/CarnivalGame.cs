@@ -16,7 +16,7 @@ namespace TextCarnivalV2.Source.CarnivalGames
 
         public CarnivalGame() {
 
-        }
+        }  
 
         //Writes a string on a new line
         public void writeLine(String line)
