@@ -45,6 +45,15 @@ namespace TextCarnivalV2.Source.CarnivalGames.AllCarnivalGames
                 if (answer2 == "B")
                 {
                     writeLine("The troll says to safely pass the bridge you must answer a riddle. If you are right I will let you pass. \n Here's your riddle. \n A house has 4 walls. All of the walls are facing south, and a bear is circling the house. What color is the bear? \nA. Brown \nB.Black \nC. White");
+                    String answer3 = Console.ReadLine();
+                    if (answer3 == "A" || answer3 == "B")
+                    {
+                        writeLine("The troll says that's wrong. \nThe house is on the north pole, so the bear is white.\n He pulls out a red button and pushes it, relasing the bridge and dropping you to your death. \nNicetry.")
+                    }
+                    if (answer3 == "C")
+                    {
+                        writeLine("The troll says that's correct! and lets you pass the bridge.")
+                    }
                 }
             }
 
