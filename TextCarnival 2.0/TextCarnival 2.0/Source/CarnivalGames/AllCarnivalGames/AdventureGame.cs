@@ -48,11 +48,30 @@ namespace TextCarnivalV2.Source.CarnivalGames.AllCarnivalGames
                     String answer3 = Console.ReadLine();
                     if (answer3 == "A" || answer3 == "B")
                     {
-                        writeLine("The troll says that's wrong. \nThe house is on the north pole, so the bear is white.\n He pulls out a red button and pushes it, relasing the bridge and dropping you to your death. \nNicetry.")
+                        writeLine("The troll says that's wrong. \nThe house is on the north pole, so the bear is white.\n He pulls out a red button and pushes it, relasing the bridge and dropping you to your death. \nNicetry.");
                     }
                     if (answer3 == "C")
                     {
-                        writeLine("The troll says that's correct! and lets you pass the bridge.")
+                        writeLine("The troll says that's correct! and lets you pass the bridge.\n after the bridge, you see 3 paths. Pick one.\n1\n2\n3");
+                        String answer4 = Console.ReadLine();
+                        if( answer4 == "1" || answer4 == "3")
+                        {
+                            writeLine("Well that's wrong. Sorry, you die. \nnice try");
+                        }
+                        if( answer4 == "2")
+                        {
+                            writeLine("That path leads you to a dark and scary part of the woods. \nDo you: \n A.Turn around \nB.Walk through and hope for the best \nC. Take a quick nap to clear your head");
+                            String answer5 = Console.ReadLine();
+                            if (answer5 == "A")
+                            {
+                                writeLine("After turning around a bear runs out of the wood and attacks. \nnicce try.")
+                            }
+                            if(answer5 == "B")
+                            {
+                                writeLine("While walking through you step on a very deadly snack. It bites you and kills you instently. \nnice try.");
+                            }
+
+                        }
                     }
                 }
             }
