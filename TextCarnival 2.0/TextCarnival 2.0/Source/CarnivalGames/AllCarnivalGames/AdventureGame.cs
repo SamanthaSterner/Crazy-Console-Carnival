@@ -24,7 +24,7 @@ namespace TextCarnivalV2.Source.CarnivalGames.AllCarnivalGames
             showTitle("WELCOME TO THE ADVENTURE GAME!");
 
             writeLine("This is an interactive game that will either end in your escape or you brutal death! Ready to play? Let's go! \n\n\n\n\n");
-            writeLine("One day you go hiking in the woods. While hiking you get EXTREMLY lost. \n You come up to a huge bridge crossing over a river. \n Do you: \n A.Cross the bridge \n B.play it safe and try to find another way");
+            writeLine("One day you go hiking in the woods. While hiking you get EXTREMLY lost. \n You come up to a huge bridge crossing over a river. \nDo you: \nA.Cross the bridge \nB.play it safe and try to find another way");
             String answer1 = Console.ReadLine();
             if ( answer1 == "B")
             {
@@ -64,11 +64,38 @@ namespace TextCarnivalV2.Source.CarnivalGames.AllCarnivalGames
                             String answer5 = Console.ReadLine();
                             if (answer5 == "A")
                             {
-                                writeLine("After turning around a bear runs out of the wood and attacks. \nnicce try.")
+                                writeLine("After turning around a bear runs out of the wood and attacks. \nnicce try.");
                             }
                             if(answer5 == "B")
                             {
                                 writeLine("While walking through you step on a very deadly snack. It bites you and kills you instently. \nnice try.");
+                            }
+                            if (answer5 =="C")
+                            {
+                                writeLine("You find a nice place to take a quick slumber. After a few hours you wake up and find a note. \nDo you \nA.Act like you don't see the note \nB.Pick up the note and read it \nC. pick it up and throw it away " );
+                                String answer6 = Console.ReadLine();
+                                if (answer6 == "A")
+                                {
+                                    writeLine("You get up and start wondering around and later find out that the paper had a map on it. You die a slow and painful death in the middle of the woods. \nnice try");
+                                }
+                                if (answer6 == "C")
+                                {
+                                    writeLine("Well it was nice of you to clean upp but you just threw out your only chance of living and after a while you die. \nnice try. ");
+                                }
+                                if (answer6 == "B")
+                                {
+                                    writeLine("You pick up the paper and ISSA MAP! Do you:\nA. Say Dang i really wish i knew how to read a map \nB.Look at the map and find the way out ");
+                                    String answer7 = Console.ReadLine();
+                                    if (answer7 == "A")
+                                    {
+                                        writeLine("Well thats unfortunate. You dead.");
+                                    }
+                                    if(answer7 == "B")
+                                    {
+                                        writeLine("After 2 days, YOU MADE YOUR WAY OUT! \nCONGRATS! YOU DID IT!");
+                                    }
+                                }
+                                
                             }
 
                         }
