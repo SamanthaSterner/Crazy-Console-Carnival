@@ -24,7 +24,7 @@ namespace TextCarnivalV2.Source.CarnivalGames.AllCarnivalGames
             showTitle("WELCOME TO THE ADVENTURE GAME!");
 
             writeLine("This is an interactive game that will either end in your escape or you brutal death! Ready to play? Let's go! \n\n\n\n\n");
-            writeLine("One day you go hiking in the woods. While hiking you get EXTREMLY lost. \n You come up to a huge bridge crossing over a river. \nDo you: \nA.Cross the bridge \nB.play it safe and try to find another way");
+            writeLine("One day you go hiking in the woods. While hiking you get EXTREMELY lost. \n You come up to a huge bridge crossing over a river. \nDo you: \nA.Cross the bridge \nB.play it safe and try to find another way");
             String answer1 = Console.ReadLine();
             if ( answer1 == "B")
             {
@@ -32,7 +32,7 @@ namespace TextCarnivalV2.Source.CarnivalGames.AllCarnivalGames
             }
             if (answer1 == "A")
             {
-                writeLine("You start to cross over the bridge but half way through a troll jumps out infrount of you. Do you \nA. Run as fast as you can across the bridge \nB.Stand there and wait for him to talk \nC.Push him off the brige");
+                writeLine("You start to cross over the bridge but half way through a troll jumps out infront of you. \nDo you: \nA. Run as fast as you can across the bridge \nB.Stand there and wait for him to talk \nC.Push him off the brige");
                 String answer2 = Console.ReadLine();
                 if (answer2 == "A")
                 {
